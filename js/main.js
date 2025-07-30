@@ -30,17 +30,15 @@ var swiper = new Swiper(".landingSwiper", {
     clickable: true,
   },
 });
-// offers slider
+// offer slider
 var swiper = new Swiper(".offerSlider", {
-  slidesPerView: 2.2, // شريحتين كاملتين + جزء من الثالثة
+  slidesPerView: 2.2, // الوضع الافتراضي
   spaceBetween: 20,
-
   loop: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
-  slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -55,7 +53,7 @@ var swiper = new Swiper(".offerSlider", {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 20,
     },
     1024: {
@@ -64,6 +62,7 @@ var swiper = new Swiper(".offerSlider", {
     },
   },
 });
+
 // testemonails slider
 var swiper = new Swiper(".testemonailsSlider", {
   slidesPerView: 1.2, // شريحتين كاملتين + جزء من الثالثة
