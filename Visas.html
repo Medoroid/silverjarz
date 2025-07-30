@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>silverjarz</title>
+</head>
+
+<body class="">
+    <!-- navbar -->
+    <nav class="" style="background-color: hsla(0, 0%, 100%, .9);box-shadow: 0 0 10px rgba(0, 0, 0, .2);">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-center" style="padding: 10px;">
+                <a href="index.html"><img src="img/sjlogo.20c2cca10efa6d605cd8.png" class="img-fluid"
+                        style="width: 75px;" alt=""></a>
+            </div>
+            <ul class="d-lg-flex list-unstyled m-0 h-100 gap-3 d-none " style="transition: .3s;">
+                <li class="h-100 overflow-hidden nav-item position-relative "><a href="index.html"
+                        class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-center"
+                        style="padding: 0 10px;min-height: 80.4px;">Home</a></li>
+                <li class="h-100 overflow-hidden nav-item position-relative active"><a href="Visas.html"
+                        class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-center"
+                        style="padding: 0 10px;min-height: 80.4px;">Visas</a></li>
+                <li class="h-100 overflow-hidden nav-item position-relative"><a href="Tickets.html"
+                        class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-center"
+                        style="padding: 0 10px;min-height: 80.4px;">Tickets</a></li>
+                <li class="h-100 overflow-hidden nav-item position-relative"><a href="Tours.html"
+                        class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-center"
+                        style="padding: 0 10px;min-height: 80.4px;">Tours</a></li>
+                <li class="h-100 overflow-hidden nav-item position-relative"><a href="CarRental.html"
+                        class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-center"
+                        style="padding: 0 10px;min-height: 80.4px;">Car Rental</a></li>
+                <li class="h-100 overflow-hidden nav-item position-relative"><a href="ContactUs.html"
+                        class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-center"
+                        style="padding: 0 10px;min-height: 80.4px;">Contact Us</a></li>
+            </ul>
+            <div class="menu-toggle d-lg-none d-flex border-0 bg-transparent" onclick="" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+        <ul class="d-flex flex-column position-fixed list-unstyled m-0 gap-3 w-100 hide d-lg-none" id="menu"
+            style="height: calc(100dvh - 80px);top: 80px; z-index: 2; backdrop-filter: blur(5px);background-color: hsla(0, 0%, 100%, .9);z-index: 1000;">
+
+            <li class="h-100 overflow-hidden nav-item position-relative "
+                style="min-height: 80.4px; max-height: 84.7px;"><a href="index.html"
+                    class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-start justify-content-center pt-2"
+                    style="padding: 0 10px;min-height: 80.4px;">Home</a></li>
+            <li class="h-100 overflow-hidden nav-item position-relative active"
+                style="min-height: 80.4px; max-height: 84.7px;"><a href="Visas.html"
+                    class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-start justify-content-center pt-2 "
+                    style="padding: 0 10px;">Visas</a></li>
+            <li class="h-100 overflow-hidden nav-item position-relative"
+                style="min-height: 80.4px; max-height: 84.7px;"><a href="Tickets.html"
+                    class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-start justify-content-center pt-2"
+                    style="padding: 0 10px;">Tickets</a></li>
+            <li class="h-100 overflow-hidden nav-item position-relative"
+                style="min-height: 80.4px; max-height: 84.7px;"><a href="Tours.html"
+                    class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-start justify-content-center pt-2"
+                    style="padding: 0 10px;">Tours</a></li>
+            <li class="h-100 overflow-hidden nav-item position-relative"
+                style="min-height: 80.4px; max-height: 84.7px;"><a href="CarRental.html"
+                    class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-start justify-content-center pt-2"
+                    style="padding: 0 10px;">Car Rental</a></li>
+            <li class="h-100 overflow-hidden nav-item position-relative"
+                style="min-height: 80.4px; max-height: 84.7px;"><a href="ContactUs.html"
+                    class="fs-main text-decoration-none text-main fw-medium h-100 d-flex align-items-start justify-content-center pt-2"
+                    style="padding: 0 10px;">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- navbar -->
+    <!-- flags -->
+    <div class="flags" style="padding: 50px 15px 0;">
+        <div class="container">
+           <div class="text-center d-flex justify-content-center gap-2 mb-4">
+    <!-- <button class="btn btn-outline-primary filter-btn" data-country="all">All</button> -->
+    <button class=" contBtn bg-transparent filter-btn p-0" style="border:none;" data-country="United Arab Emirates"><img style=" border-radius:10px; border:none; max-width: 82px;height: 100%;" src="img/uae.jpg" alt=""></button>
+    <button class=" contBtn bg-transparent filter-btn p-0" style="border:none;" data-country="Oman"><img style=" border-radius:10px; border:none; max-width: 82px;height: 100%;" src="img/oman.png" alt=""></button>
+    <button class=" contBtn bg-transparent filter-btn p-0" style="border:none;" data-country="Saudi Arabia"><img style=" border-radius:10px; border:none; max-width: 82px;height: 100%;" src="img/ksa.jpg" alt=""></button>
+    <button class=" contBtn bg-transparent filter-btn p-0" style="border:none;" data-country="Qatar"><img style=" border-radius:10px; border:none; max-width: 82px;height: 100%;" src="img/qatar.png" alt=""></button>
+    <button class=" contBtn bg-transparent filter-btn p-0" style="border:none;" data-country="Bahrain"><img style=" border-radius:10px; border:none; max-width: 82px;height: 100%;" src="img/bahrain.png" alt=""></button>
+    <button class=" contBtn bg-transparent filter-btn p-0" style="border:none;" data-country="Kuwait"><img style=" border-radius:10px; border:none; max-width: 82px;height: 100%;" src="img/kuwait.png" alt=""></button>
+  </div>
+
+            <div class="row" id="Tickets" style="padding: 50px 15px 0;">
+                
+            </div>
+        </div>
+    </div>
+    <!-- flags -->
+    <!-- testemonils -->
+    <div class="testemonails" style="padding: 50px 15px;">
+        <div class="container">
+            <h2 class="text-main fs-section" style="margin-bottom: 20px;">See what Our Customers are <span
+                    class="fw-bold">Saying</span></h2>
+            <div class="swiper testemonailsSlider  ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column align-items-center text-center  p-3"
+                            style="background-color: #EEEEEE;border-radius: 10px;">
+                            <img src="img/steve.jpg" style="width: 50px;height: 50px;object-fit: cover;"
+                                class="rounded-circle mb-3" alt="">
+                            <h4 class="fs-main fw-bold text-main">Fantastic Travel Experience</h4>
+                            <p class="text-black1" style="font-size: 14px;">I had the most amazing travel experience
+                                with SilverJarz. Their attention to detail and excellent customer service made the trip
+                                unforgettable. Highly recommended!</p>
+                            <div class="info">
+                                <h4 class="fs-main fw-bold text-main m-0">John Smith</h4>
+                                <div class="raiting text-main " style="font-size: 14px;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column align-items-center text-center  p-3"
+                            style="background-color: #EEEEEE;border-radius: 10px;">
+                            <img src="img/mary.jpg" style="width: 50px;height: 50px;object-fit: cover;"
+                                class="rounded-circle mb-3" alt="">
+                            <h4 class="fs-main fw-bold text-main">Fantastic Travel Experience</h4>
+                            <p class="text-black1" style="font-size: 14px;">I had the most amazing travel experience
+                                with SilverJarz. Their attention to detail and excellent customer service made the trip
+                                unforgettable. Highly recommended!</p>
+                            <div class="info">
+                                <h4 class="fs-main fw-bold text-main m-0">John Smith</h4>
+                                <div class="raiting text-main " style="font-size: 14px;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column align-items-center text-center  p-3"
+                            style="background-color: #EEEEEE;border-radius: 10px;">
+                            <img src="img/john.jpg" style="width: 50px;height: 50px;object-fit: cover;"
+                                class="rounded-circle mb-3" alt="">
+                            <h4 class="fs-main fw-bold text-main">Fantastic Travel Experience</h4>
+                            <p class="text-black1" style="font-size: 14px;">I had the most amazing travel experience
+                                with SilverJarz. Their attention to detail and excellent customer service made the trip
+                                unforgettable. Highly recommended!</p>
+                            <div class="info">
+                                <h4 class="fs-main fw-bold text-main m-0">John Smith</h4>
+                                <div class="raiting text-main " style="font-size: 14px;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex flex-column align-items-center text-center  p-3"
+                            style="background-color: #EEEEEE;border-radius: 10px;">
+                            <img src="img/steve.jpg" style="width: 50px;height: 50px;object-fit: cover;"
+                                class="rounded-circle mb-3" alt="">
+                            <h4 class="fs-main fw-bold text-main">Fantastic Travel Experience</h4>
+                            <p class="text-black1" style="font-size: 14px;">I had the most amazing travel experience
+                                with SilverJarz. Their attention to detail and excellent customer service made the trip
+                                unforgettable. Highly recommended!</p>
+                            <div class="info">
+                                <h4 class="fs-main fw-bold text-main m-0">John Smith</h4>
+                                <div class="raiting text-main " style="font-size: 14px;">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testemonils -->
+    <!-- feturers -->
+    <div class="fetuers">
+        <div class="container">
+            <div class="header">
+                <h2 class="fs-section fw-semibold text-main">Why Book with SilverJarz</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4 col-12">
+                    <div class="d-flex flex-column align-items-start w-100">
+                        <div class="item d-flex align-items-center gap-3 w-100 text-main"
+                            style="border-bottom: 1px solid #dfdfdf;margin-bottom: 20px;padding-block: 20px;">
+                            <i style="font-size: 35px;" class="fas fa-clock"></i>
+                            <div class="">
+                                <p class="m-0 fw-bold text-main" style="    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+">Save Time & Effort</p>
+                                <span class="text-main" style="display: block;
+    font-size: 14px;
+    font-weight: 400;">By Booking Online!</span>
+                            </div>
+                        </div>
+                        <div class="item d-flex align-items-center gap-3 w-100 text-main"
+                            style="border-bottom: 1px solid #dfdfdf;margin-bottom: 20px;padding-block: 20px;">
+                            <i style="font-size: 35px;" class="fas fa-mobile-screen"></i>
+                            <div class="">
+                                <p class="m-0 fw-bold text-main" style="    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+">Save Time & Effort</p>
+                                <span class="text-main" style="display: block;
+    font-size: 14px;
+    font-weight: 400;">By Booking Online!</span>
+                            </div>
+                        </div>
+                        <div class="item d-flex align-items-center gap-3 w-100 text-main"
+                            style="margin-bottom: 20px;padding-block: 20px;">
+                            <i style="font-size: 35px;" class="fas fa-route"></i>
+                            <div class="">
+                                <p class="m-0 fw-bold text-main" style="    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+">Save Time & Effort</p>
+                                <span class="text-main" style="display: block;
+    font-size: 14px;
+    font-weight: 400;">By Booking Online!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="vid">
+                        <video src="img/videos/1.mp4" muted controls autoplay class="w-100"></video>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="d-flex flex-column align-items-start w-100">
+                        <div class="item d-flex align-items-center gap-3 w-100 text-main"
+                            style="border-bottom: 1px solid #dfdfdf;margin-bottom: 20px;padding-block: 20px;">
+                            <i style="font-size: 35px;" class="fas fa-shield"></i>
+                            <div class="">
+                                <p class="m-0 fw-bold text-main" style="    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+">Save Time & Effort</p>
+                                <span class="text-main" style="display: block;
+    font-size: 14px;
+    font-weight: 400;">By Booking Online!</span>
+                            </div>
+                        </div>
+                        <div class="item d-flex align-items-center gap-3 w-100 text-main"
+                            style="border-bottom: 1px solid #dfdfdf;margin-bottom: 20px;padding-block: 20px;">
+                            <i style="font-size: 35px;" class="fas fa-headphones-simple"></i>
+                            <div class="">
+                                <p class="m-0 fw-bold text-main" style="    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+">Save Time & Effort</p>
+                                <span class="text-main" style="display: block;
+    font-size: 14px;
+    font-weight: 400;">By Booking Online!</span>
+                            </div>
+                        </div>
+                        <div class="item d-flex align-items-center gap-3 w-100 text-main"
+                            style="margin-bottom: 20px;padding-block: 20px;">
+                            <i style="font-size: 35px;" class="fas fa-handshake"></i>
+                            <div class="">
+                                <p class="m-0 fw-bold text-main" style="    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+">Save Time & Effort</p>
+                                <span class="text-main" style="display: block;
+    font-size: 14px;
+    font-weight: 400;">By Booking Online!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feturers -->
+    <!-- Offers Slider -->
+    <div class="offars" style="padding: 50px 15px;">
+        <div class="container">
+            <div class="header">
+                <h2 class="fs-section fw-semibold text-main">أجدد العروض</h2>
+            </div>
+            <div class="swiper offerSlider  ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <div class="card w-100"
+                            style="direction: rtl; width: 100%;box-shadow: 0 0 10px rgba(0,0,0,.2);border-bottom: 2px solid var(--main-color); border-radius: 10px ;margin-right: 30px;">
+                            <div class="overflow-hidden">
+                                <img src="img/marrakech.jpg" class="card-img-top object-fit-cover"
+                                    style="height: 200px;transition: .3s;" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-sub fw-bold text-main mb-3">Riyadh, Saudi Arabia</h5>
+                                <h6 class="card-subtitle text-main text-black fw-bold ">كود: <span>1234</span></h6>
+                                <p class="card-text text-nowrap overflow-hidden mb-2" style="text-overflow: ellipsis;">
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card’s content.</p>
+                                <a class="effected-btn" href="">احجز الآن</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <div class="card w-100"
+                            style="direction: rtl; width: 100%;box-shadow: 0 0 10px rgba(0,0,0,.2);border-bottom: 2px solid var(--main-color); border-radius: 10px ;margin-right: 30px;">
+                            <div class="overflow-hidden">
+                                <img src="img/amman.png" class="card-img-top object-fit-cover"
+                                    style="height: 200px;transition: .3s;" alt="...">
+                            </div>
+                            <div class="card-body">
+
+
+                                <h5 class="card-title fs-sub fw-bold text-main mb-3">Riyadh, Saudi Arabia</h5>
+                                <h6 class="card-subtitle text-main text-black fw-bold ">كود: <span>1234</span></h6>
+                                <p class="card-text text-nowrap overflow-hidden mb-2" style="text-overflow: ellipsis;">
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card’s content.</p>
+                                <a class="effected-btn" href="">احجز الآن</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <div class="card w-100"
+                            style="direction: rtl; width: 100%;box-shadow: 0 0 10px rgba(0,0,0,.2);border-bottom: 2px solid var(--main-color); border-radius: 10px ;margin-right: 30px;">
+                            <div class="overflow-hidden">
+                                <img src="img/abu-dhabi.jpg" class="card-img-top object-fit-cover"
+                                    style="height: 200px;transition: .3s;" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-sub fw-bold text-main mb-3 ">Riyadh, Saudi Arabia</h5>
+
+                                <h6 class="card-subtitle text-main text-black fw-bold ">كود: <span>1234</span></h6>
+                                <p class="card-text text-nowrap overflow-hidden mb-2" style="text-overflow: ellipsis;">
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card’s content.</p>
+                                <a class="effected-btn" href="">احجز الآن</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <div class="card w-100"
+                            style="direction: rtl; width: 100%;box-shadow: 0 0 10px rgba(0,0,0,.2);border-bottom: 2px solid var(--main-color); border-radius: 10px ;margin-right: 30px;">
+                            <div class="overflow-hidden">
+                                <img src="img/cairo.jpg" class="card-img-top object-fit-cover"
+                                    style="height: 200px;transition: .3s;" alt="...">
+                            </div>
+                            <div class="card-body">
+
+
+                                <h5 class="card-title fs-sub fw-bold text-main mb-3">Riyadh, Saudi Arabia</h5>
+                                <h6 class="card-subtitle text-main text-black fw-bold ">كود: <span>1234</span></h6>
+                                <p class="card-text text-nowrap overflow-hidden mb-2" style="text-overflow: ellipsis;">
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card’s content.</p>
+                                <a class="effected-btn" href="">احجز الآن</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <div class="card w-100"
+                            style="direction: rtl; width: 100%;box-shadow: 0 0 10px rgba(0,0,0,.2);border-bottom: 2px solid var(--main-color); border-radius: 10px ;margin-right: 30px;">
+
+                            <div class="overflow-hidden"><img src="img/riyadh.jpg" class="card-img-top object-fit-cover"
+                                    style="height: 200px;transition: .3s;" alt="..."></div>
+                            <div class="card-body">
+
+
+                                <h5 class="card-title fs-sub fw-bold text-main mb-3">Riyadh, Saudi Arabia</h5>
+                                <h6 class="card-subtitle text-main text-black fw-bold ">كود: <span>1234</span></h6>
+                                <p class="card-text text-nowrap overflow-hidden mb-2" style="text-overflow: ellipsis;">
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card’s content.</p>
+                                <a class="effected-btn" href="">احجز الآن</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offers Slider -->
+    <!-- footer -->
+    <footer class="bg-main" style="padding: 50px 15px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <h3 class="fw-bold text-white pb-2 border-bottom-1 border-white fs-main"
+                        style="border-bottom: 1px solid white;width: fit-content;">Menu</h3>
+                    <ul class="list-unstyled p-0 text-white mb-3">
+                        <li class="mb-3 mt-3" style="font-size: 14px;"><a href="index.html" style="transition: .3s;"
+                                class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-3" style="font-size: 14px;"><a href="Visas.html" style="transition: .3s;"
+                                class="text-white text-decoration-none">Visas</a></li>
+                        <li class="mb-3" style="font-size: 14px;"><a href="ContactUs.html" style="transition: .3s;"
+                                class="text-white text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h3 class="fw-bold text-white pb-2 border-bottom-1 border-white fs-main"
+                        style="border-bottom: 1px solid white;width: fit-content;">Contact Us</h3>
+                    <ul class="list-unstyled p-0 text-white mb-3  mt-3">
+                        <li class="mb-3 mt-3" style="font-size: 14px;"><i
+                                class="fas text-alt fs-main me-2 fa-envelope"></i><span style="transition: .3s;"
+                                class="text-white text-decoration-none">info@silverjarz.com</span></li>
+                        <li class="mb-3" style="font-size: 14px;"><i
+                                class="fas text-alt fs-main me-2 fa-phone"></i><span style="transition: .3s;"
+                                class="text-white text-decoration-none">+96893579571</span></li>
+                        <li class="mb-3" style="font-size: 14px;"><i
+                                class="fas text-alt fs-main me-2 fa-phone"></i><span style="transition: .3s;"
+                                class="text-white text-decoration-none">+96891934140</span></li>
+                        <li class="mb-3" style="font-size: 14px;"><i
+                                class="fas text-alt fs-main me-2 fa-location-dot"></i><span style="transition: .3s;"
+                                class="text-white text-decoration-none">Khasab - Mudsandam - Oman</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h3 class="fw-bold text-white pb-2 border-bottom-1 border-white fs-main"
+                        style="border-bottom: 1px solid white;width: fit-content;">Find Us on Map</h3>
+                    <iframe class=" mt-3" title="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14321.58786762492!2d56.231417680366285!3d26.18376197933331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef6f5719ea09f07%3A0x3d6c9ca9eee51a97!2zU0lMVkVSIEpBUlogVFJBVkVMICYgVE9VUklTTSzYp9mE2KzYsdiyINin2YTZgdi22Yog2YTZhNiz2YHYsSDZiNin2YTYs9mK2KfYrdmH!5e0!3m2!1sen!2seg!4v1692953461363!5m2!1sen!2seg"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        style="border: 0px;border-radius: 10px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <!-- copy -->
+    <div class="copy"
+        style="    background-color: var(--main-color);color: #fff;padding: 20px 10px;text-align: center; font-size: 16px;">
+        All Rights Reserved Silver Jarz travel and tourism 2025</div>
+    <!-- copy -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
